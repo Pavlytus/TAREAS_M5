@@ -14,7 +14,6 @@ function leerDatos(callback) {
         console.log("Leyendo datos...");
         const datosComoTexto = JSON.stringify(biblioteca); // Simula el contenido de un archivo JSON (texto)
         const datosLeidos = JSON.parse(datosComoTexto);   // Simula la lectura del archivo y conversión a objeto
-        
         callback(datosLeidos); // Devuelve el objeto reconstruido
     }, 1000);
 }
